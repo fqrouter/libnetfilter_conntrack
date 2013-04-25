@@ -22,6 +22,8 @@
 #include <libnetfilter_conntrack/libnetfilter_conntrack_sctp.h>
 #include <libnetfilter_conntrack/libnetfilter_conntrack_dccp.h>
 
+#define be64toh(x) htobe64(x)
+
 #include "internal/object.h"
 #include "internal/prototypes.h"
 #include "internal/types.h"
